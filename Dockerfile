@@ -6,6 +6,6 @@ COPY package.json /app/package.json
 COPY package-lock.json /app/package-lock.json
 COPY server.js /app/server.js
 RUN npm install --production
-EXPOSE 8000
+ENV PORT 8080
 USER dock
 CMD ["npm", "start"]
