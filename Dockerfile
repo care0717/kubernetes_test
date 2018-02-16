@@ -6,6 +6,6 @@ COPY package.json /app/package.json
 
 COPY server.js /app/server.js
 RUN npm install --production
-ENV PORT 8080
+EXPOSE 8080
 USER dock
 CMD ["npm", "start"]
